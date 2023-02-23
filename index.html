@@ -22,10 +22,10 @@ var height = canvas.height = window.innerHeight;
     function random(min, max) {
   var num = Math.floor(Math.random() * (max - min + 1)) + min;
   return num;
-} </script>  
- 
+      
+}
     
-    function Ball(x, y, velX, velY, color, size) {
+     function Ball(x, y, velX, velY, color, size) {
   this.x = x; //posición horizontal
   this.y = y; //posición vertical
   this.velX = velX; //velocidad horizontal
@@ -39,7 +39,10 @@ var height = canvas.height = window.innerHeight;
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.fill();
 } 
-}
+} </script>  
+ 
+    
+    
       
       
    
