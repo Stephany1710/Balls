@@ -12,22 +12,7 @@
   <body>
     <h1>bouncing balls</h1>
    
-    <canvas> 
-        
-       function Ball(x, y, velX, velY, color, size) {
-  this.x = x; //posición horizontal
-  this.y = y; //posición vertical
-  this.velX = velX; //velocidad horizontal
-  this.velY = velY; //velocidad vertical
-  this.color = color; //color
-  this.size = size; //tamaño
-    
-     Ball.prototype.draw = function() {
-  ctx.beginPath();
-  ctx.fillStyle = this.color;
-  ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-  ctx.fill();
-}    </canvas>
+    <canvas>    </canvas>
 
     <script src="main.js"> 
     var canvas = document.querySelector('canvas');
@@ -41,11 +26,24 @@ var height = canvas.height = window.innerHeight;
   var num = Math.floor(Math.random() * (max - min + 1)) + min;
   return num;
       
-}
-    
- 
+} 
 } </script>  
     
-  
+        <Ball>
+       function Ball(x, y, velX, velY, color, size) {
+  this.x = x; //posición horizontal
+  this.y = y; //posición vertical
+  this.velX = velX; //velocidad horizontal
+  this.velY = velY; //velocidad vertical
+  this.color = color; //color
+  this.size = size; //tamaño
+    <draw>
+     Ball.prototype.draw = function() {
+  ctx.beginPath();
+  ctx.fillStyle = this.color;
+  ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+  ctx.fill();
+      }    </draw>
+    </Ball>
   </body>
 </html> 
