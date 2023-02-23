@@ -28,7 +28,7 @@ var height = canvas.height = window.innerHeight;
       
 } 
 } 
-         <Ball>
+       Ball():
        function Ball(x, y, velX, velY, color, size) {
   this.x = x; //posición horizontal
   this.y = y; //posición vertical
@@ -36,14 +36,13 @@ var height = canvas.height = window.innerHeight;
   this.velY = velY; //velocidad vertical
   this.color = color; //color
   this.size = size; //tamaño
-    <draw>
+    draw(); 
      Ball.prototype.draw = function() {
   ctx.beginPath();
   ctx.fillStyle = this.color;
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.fill();
-      }    </draw>
-    </Ball> 
+      }       
     </script>  
     
     
